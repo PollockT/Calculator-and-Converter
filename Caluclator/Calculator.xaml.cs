@@ -1,4 +1,9 @@
-﻿using System;
+﻿/* Author: Theodore Pollock
+ * Email: PollockT@TulsaPretech.com
+ * File Name: Calculator.xamal.cs
+ */
+
+using System;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -95,6 +100,12 @@ namespace Caluclator
             {
                 textEqu.Text = textEqu.Text.Substring(0, textEqu.Text.Length - 1);
             }
+        }
+
+        private void btnConverter_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new Window1();
+            window.Show();                    
         }
     }
 }

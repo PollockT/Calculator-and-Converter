@@ -1,5 +1,5 @@
 ﻿<Window x:Class="Caluclator.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Homework 3 - Calculator" Height="310" Width="225" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True" Background="#FF0B1764">
-    <Grid Background="#FF460303" Height="284" VerticalAlignment="Top">
+    <Grid Background="#FF460303" Height="300" VerticalAlignment="Top">
         <Button Content="7" HorizontalAlignment="Left" Margin="11,115,0,0" VerticalAlignment="Top" Width="45" Height="30" FontSize="18" BorderThickness="2,2,2,1" Click="Button_Click_1">
             <Button.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
@@ -206,6 +206,18 @@
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowTextColorKey}}"/>
             </Button.Background>
         </Button>
+        <Button x:Name="btnConverter" Content="Converter" HorizontalAlignment="Left" Margin="62,258,0,0" VerticalAlignment="Top" Height="26" Width="96" BorderThickness="2" Click="btnConverter_Click">
+            <Button.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowTextColorKey}}"/>
+            </Button.Background>
+        </Button>
+
     </Grid>
 
 </Window>  

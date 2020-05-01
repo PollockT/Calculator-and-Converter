@@ -1,7 +1,14 @@
 ﻿<Window x:Class="Caluclator.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Caluclator"
         mc:Ignorable="d"
-        Title="Homework 3 - Converter" Height="310" Width="225" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True" Background="#FF460303">
+        Title="Homework 3 - Converter" Height="300" Width="225" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True" Background="#FF460303">
     <Grid Background="#FF0B1764"  Height="284" VerticalAlignment="Top">
-        
+        <Label x:Name="lblCel" Content="Celsius" HorizontalAlignment="Left" Height="25" Margin="21,41,0,0" VerticalAlignment="Top" Width="51"/>
+        <Label x:Name="lblFah" Content="Fahrenheit" HorizontalAlignment="Left" Margin="21,0,0,0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtCel" HorizontalAlignment="Left" Margin="21,77,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" Height="19"/>
+        <TextBox x:Name="txtFah" HorizontalAlignment="Left" Margin="21,160,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <RadioButton x:Name="rdCel" Content="To Celsius" HorizontalAlignment="Left" Margin="130,39,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdFah" Content="To Fahrenheit" HorizontalAlignment="Left" Margin="130,54,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnConvert" Content="Convert" HorizontalAlignment="Left" Margin="118,110,0,0" VerticalAlignment="Top" Height="29" Width="102" Click="btnConvert_Click"/>
+
     </Grid>
 </Window>

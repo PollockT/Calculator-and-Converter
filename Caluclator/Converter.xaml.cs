@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿/* Author: Theodore Pollock
+ * Email: PollockT@TulsaPretech.com
+ * File Name: Converter.xamal.cs
+ */
+
+using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Caluclator
 {
@@ -20,6 +16,27 @@ namespace Caluclator
         public Window1()
         {
             InitializeComponent();
+        }
+
+        private void btnConvert_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if(rdCel.IsChecked == true)
+                {
+                    double celcius = Convert.ToDouble(txtCel.Text);
+                    txtFah.Text = Convert.ToString((celcius * 1.8) + 32);
+                }
+                if(rdFah.IsChecked == true)
+                {
+                    double fahrenheit = Convert.ToDouble(txtFah.Text);
+                    txtCel.Text = Convert.ToString((fahrenheit - 32) / 1.8);
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Please Enter a Number");
+            }
         }
     }
 }
